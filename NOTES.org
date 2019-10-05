@@ -1,0 +1,15 @@
+* Probably all on a grid
+* TODO Support bridges?
+* Two resolver colors, red and blue
+- final train is gold
+- need to get gold into exit
+- how do we handle splits? which side is success and which side is failure
+- maybe set up like T junction
+- stem is input, left turn is consume, right turn is don't?
+- wait, why even bother making two outputs, it can always just pass through if it's not right
+* two kids passing trains back and forth
+- simon and mali
+- mali has all the trains
+- simon has nothing
+- simon is spoiled, and only wants certain configurations of trains
+* cool t-junction block that allows you to create loops
