@@ -14,7 +14,10 @@ import {
   upLeftTexture,
   upRightTexture,
   downLeftTexture,
-  downRightTexture
+  downRightTexture,
+  redFilterTexture,
+  milaHouseTexture,
+  simonHouseTexture
 } from "./cell.texture";
 
 class Cell implements GameObject {
@@ -65,10 +68,13 @@ class Cell implements GameObject {
       [CellState.UpLeft]: upLeftTexture(props.pixi.renderer),
       [CellState.UpRight]: upRightTexture(props.pixi.renderer),
       [CellState.DownLeft]: downLeftTexture(props.pixi.renderer),
-      [CellState.DownRight]: downRightTexture(props.pixi.renderer)
+      [CellState.DownRight]: downRightTexture(props.pixi.renderer),
+      [CellState.RedFilter]: redFilterTexture(props.pixi.renderer),
+      [CellState.MilaHouse]: milaHouseTexture(props.pixi.renderer),
+      [CellState.SimonHouse]: simonHouseTexture(props.pixi.renderer)
     } as Record<CellState, P.Texture>;
 
-    this._cellSprite = new P.Sprite(this._textureMap[CellState.Empty]);
+    this._cellSprite = new P.Sprite(this._textureMap[this.cellState]);
     this._hoverSprite = new P.Sprite(hoverTexture(props.pixi.renderer));
 
     this._hoverSprite.alpha = 0;

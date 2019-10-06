@@ -10,7 +10,10 @@ export enum CellState {
   UpLeft,
   UpRight,
   DownLeft,
-  DownRight
+  DownRight,
+  RedFilter,
+  MilaHouse,
+  SimonHouse
 }
 
 export function addLeft(cellState: CellState, fillEmpty = false) {
@@ -138,5 +141,16 @@ export function removeDown(cellState: CellState) {
       return CellState.Right;
     default:
       return cellState;
+  }
+}
+
+export function isSpecial(cellState: CellState) {
+  switch (cellState) {
+    case CellState.RedFilter:
+    case CellState.MilaHouse:
+    case CellState.SimonHouse:
+      return true;
+    default:
+      return false;
   }
 }

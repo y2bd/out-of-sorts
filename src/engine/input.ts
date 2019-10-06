@@ -21,7 +21,9 @@ export enum Key {
   D = "KeyD",
   W = "KeyW",
   J = "KeyJ",
-  K = "KeyK"
+  K = "KeyK",
+
+  Space = "Space"
 }
 
 class Input {

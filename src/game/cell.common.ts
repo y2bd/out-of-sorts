@@ -1,2 +1,2 @@
-export const CellWidth = 32.0;
-export const CellHeight = 32.0;
+export const CellWidth = 48.0;
+export const CellHeight = 48.0;

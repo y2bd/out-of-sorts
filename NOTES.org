@@ -13,3 +13,4 @@
 - simon has nothing
 - simon is spoiled, and only wants certain configurations of trains
 * cool t-junction block that allows you to create loops
+- what if instead it's always LU are inputs, R is success, D is failure

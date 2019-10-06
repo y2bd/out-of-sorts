@@ -26,3 +26,11 @@ export function cacheDisplayObjectAsTexture(displayObject: P.DisplayObject) {
     );
   };
 }
+
+export function dist(a: number, b: number) {
+  return Math.abs(a - b);
+}
+
+export function sign(a: number): number {
+  return a === 0 ? 0 : a > 0 ? 1 : -1;
+}
